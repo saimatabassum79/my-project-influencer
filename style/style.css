@@ -17,6 +17,7 @@
 }
 .navbar{
     justify-content: space-between;
+    display: flex;
     align-items: center;
     margin: 70px;
     margin-top: 40px;
@@ -57,7 +58,7 @@
     width:360px;
     height: 360px;
     background-image: url('../images/Circle\ design.svg');
-    border: 2px solid red;
+   
     background-size: cover;
 }
 .banner-image img{
@@ -65,4 +66,23 @@
     height: 280px;
     margin-top: 30px;
     
+}
+.influencer-image{
+     display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+   width: 1030px ;
+   height: 80px;
+  
+   margin-top: 30px;
+   margin-left: 90px;
+}
+
+
+
+
+@media screen and (max-width:576px) {
+    .navbar, .nav-links .banner-section{
+      flex-direction: column;
+      justify-content: center;
+    }
 }
